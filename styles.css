@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Navigation Menu */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+  }
+  
+  /* Highlight active link on scroll */
+  .active {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+  }
+  
+  /* Section Styles */
+  .section {
+    min-height: 100vh; /* Make sections fill the screen height */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover; /* Ensure background images are responsive */
+    background-position: center;
+    background-attachment: fixed; /* Add parallax scrolling effect */
+  }
+  
+  #home {
+    background-color: #e3f2fd;
+  }
+  
+  #about {
+    background-color: #fce4ec;
+  }
+  
+  #skills {
+    background-color: #fff9c4;
+  }
+  
+  #projects {
+    background-color: #c8e6c9;
+  }
+  
+  #contact {
+    background-color: #d1c4e9;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  p, ul {
+    font-size: 1.2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  /* Updated About Me Section */
+  .about-content {
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .about-content p {
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  .about-content strong {
+    color: #ff6600;
+  }
+  
+  #about {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fce4ec;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p, ul {
+      font-size: 1rem;
+    }
+  
+    .about-content {
+      max-width: 90%;
+    }
+  }
+  
